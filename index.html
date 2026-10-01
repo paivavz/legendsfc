@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Legends FC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="navbar">
+
+        <div class="container nav-content">
+
+            <a href="#inicio" class="logo">
+                LEGENDS<span>FC</span>
+            </a>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#jogadores">Jogadores</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+
+            <a href="#jogadores" class="nav-button">
+                Explorar
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-glow"></div>
+
+            <div class="container hero-content">
+
+                <span class="eyebrow">
+                    FUTEBOL • HISTÓRIA • FUTURO
+                </span>
+
+                <h1>
+                    OS GRANDES
+                    <span>DO JOGO</span>
+                </h1>
+
+                <p>
+                    Conheça grandes nomes do futebol e descubra
+                    diferentes gerações de talentos que marcaram
+                    e continuam marcando o esporte.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#jogadores" class="btn btn-primary">
+                        Ver jogadores
+                    </a>
+
+                    <a href="#sobre" class="btn btn-secondary">
+                        Sobre o projeto
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="football-decoration">
+                ⚽
+            </div>
+
+        </section>
+
+
+        <!-- JOGADORES -->
+        <section class="players-section" id="jogadores">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <span class="section-label">
+                            GALERIA
+                        </span>
+
+                        <h2>
+                            ÍCONES &
+                            <span>ESTRELAS</span>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Uma seleção de jogadores de diferentes
+                        gerações e estilos.
+                    </p>
+
+                </div>
+
+
+                <!-- PESQUISA -->
+                <div class="controls">
+
+                    <div class="search-box">
+
+                        <span>🔎</span>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Pesquisar jogador..."
+                        >
+
+                    </div>
+
+
+                    <div class="filters">
+
+                        <button
+                            class="filter active"
+                            data-filter="todos"
+                            type="button"
+                        >
+                            Todos
+                        </button>
+
+                        <button
+                            class="filter"
+                            data-filter="icone"
+                            type="button"
+                        >
+                            Ícones
+                        </button>
+
+                        <button
+                            class="filter"
+                            data-filter="nova-geracao"
+                            type="button"
+                        >
+                            Nova geração
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARDS -->
+                <div class="players-grid" id="playersGrid">
+
+
+                    <!-- MESSI -->
+                    <article
+                        class="player-card"
+                        data-name="lionel messi messi"
+                        data-category="icone"
+                        data-player="messi"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/736x/f1/b6/15/f1b6156a7bdf47ae6647a2ce07e1a02d.jpg"
+                            alt="Lionel Messi"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag">
+                                ÍCONE
+                            </span>
+
+                            <h3>
+                                Lionel
+                                <strong>Messi</strong>
+                            </h3>
+
+                            <p>
+                                Argentina • Atacante
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            01
+                        </span>
+
+                    </article>
+
+
+                    <!-- CRISTIANO -->
+                    <article
+                        class="player-card"
+                        data-name="cristiano ronaldo cristiano"
+                        data-category="icone"
+                        data-player="cristiano"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/736x/ec/e6/f2/ece6f2bf50c0f4fcad73f129bcbe28f4.jpg"
+                            alt="Cristiano Ronaldo"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag">
+                                ÍCONE
+                            </span>
+
+                            <h3>
+                                Cristiano
+                                <strong>Ronaldo</strong>
+                            </h3>
+
+                            <p>
+                                Portugal • Atacante
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            02
+                        </span>
+
+                    </article>
+
+
+                    <!-- NEYMAR -->
+                    <article
+                        class="player-card"
+                        data-name="neymar jr neymar"
+                        data-category="icone"
+                        data-player="neymar"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/736x/3c/f9/1d/3cf91d3110e63012a0674021d13f88bc.jpg"
+                            alt="Neymar"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag">
+                                ÍCONE
+                            </span>
+
+                            <h3>
+                                <strong>Neymar</strong>
+                            </h3>
+
+                            <p>
+                                Brasil • Atacante
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            03
+                        </span>
+
+                    </article>
+
+
+                    <!-- YAMAL -->
+                    <article
+                        class="player-card"
+                        data-name="lamine yamal yamal"
+                        data-category="nova-geracao"
+                        data-player="yamal"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/736x/ed/46/96/ed46965d20fe73ac9fa57d45f57f0f8c.jpg"
+                            alt="Lamine Yamal"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag new">
+                                NOVA GERAÇÃO
+                            </span>
+
+                            <h3>
+                                Lamine
+                                <strong>Yamal</strong>
+                            </h3>
+
+                            <p>
+                                Espanha • Ponta
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            04
+                        </span>
+
+                    </article>
+
+
+                    <!-- PEDRI -->
+                    <article
+                        class="player-card"
+                        data-name="pedri"
+                        data-category="nova-geracao"
+                        data-player="pedri"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/736x/43/f6/9a/43f69a7fcbc820f69792cb4f1620e843.jpg"
+                            alt="Pedri"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag new">
+                                NOVA GERAÇÃO
+                            </span>
+
+                            <h3>
+                                <strong>Pedri</strong>
+                            </h3>
+
+                            <p>
+                                Espanha • Meio-campista
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            05
+                        </span>
+
+                    </article>
+
+
+                    <!-- BELLINGHAM -->
+                    <article
+                        class="player-card"
+                        data-name="jude bellingham bellingham"
+                        data-category="nova-geracao"
+                        data-player="bellingham"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/1200x/8c/f4/a2/8cf4a26b2eb6677e3af5352a8856abde.jpg"
+                            alt="Jude Bellingham"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag new">
+                                NOVA GERAÇÃO
+                            </span>
+
+                            <h3>
+                                Jude
+                                <strong>Bellingham</strong>
+                            </h3>
+
+                            <p>
+                                Inglaterra • Meio-campista
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            06
+                        </span>
+
+                    </article>
+
+
+                    <!-- OLISE -->
+                    <article
+                        class="player-card"
+                        data-name="michael olise olise"
+                        data-category="nova-geracao"
+                        data-player="olise"
+                    >
+
+                        <img
+                            src="https://i.pinimg.com/736x/4d/f0/1f/4df01f3a39bd23dc8dc0185b3df14d7a.jpg"
+                            alt="Michael Olise"
+                        >
+
+                        <div class="card-overlay"></div>
+
+                        <div class="player-info">
+
+                            <span class="player-tag new">
+                                NOVA GERAÇÃO
+                            </span>
+
+                            <h3>
+                                Michael
+                                <strong>Olise</strong>
+                            </h3>
+
+                            <p>
+                                França • Atacante
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                            >
+                                Ver perfil →
+                            </button>
+
+                        </div>
+
+                        <span class="card-number">
+                            07
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+                <p
+                    class="no-results"
+                    id="noResults"
+                >
+                    Nenhum jogador encontrado.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about-section" id="sobre">
+
+            <div class="container">
+
+                <div class="about-box">
+
+                    <div class="about-content">
+
+                        <span class="section-label">
+                            SOBRE O PROJETO
+                        </span>
+
+                        <h2>
+                            FUTEBOL QUE
+                            <span>INSPIRA</span>
+                        </h2>
+
+                        <p>
+                            O Legends FC é uma experiência visual
+                            criada para reunir grandes jogadores
+                            e apresentar diferentes gerações do
+                            futebol em um único espaço.
+                        </p>
+
+                    </div>
+
+                    <div class="about-number">
+                        07
+                        <small>JOGADORES</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL -->
+    <div
+        class="modal"
+        id="playerModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                type="button"
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+            <span
+                class="player-tag"
+                id="modalCategory"
+            >
+                ÍCONE
+            </span>
+
+            <h2 id="modalName">
+                Jogador
+            </h2>
+
+            <p
+                class="modal-position"
+                id="modalPosition"
+            ></p>
+
+            <p
+                class="modal-description"
+                id="modalDescription"
+            ></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="#inicio" class="logo">
+                    LEGENDS<span>FC</span>
+                </a>
+
+                <p>
+                    Grandes nomes. Grandes histórias.
+                </p>
+
+            </div>
+
+            <p>
+                Projeto desenvolvido com HTML, CSS e JavaScript.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
